@@ -9,19 +9,20 @@ html {
 body {
   font-family: "Epilogue", sans-serif;
   margin: 0;
+  align-items: center;
 }
 
 h1 {
-  font-size: 2.5em;
+  font-size: 2.0em;
 }
 h2 {
-  font-size: 2.1em;
+  font-size: 1.5em;
 }
 h3 {
-  font-size: 1.9em;
+  font-size: 1.5em;
 }
 p {
-  font-size: 1.2em;
+  font-size: 1em;
 }
 ul {
   list-style: none;
@@ -31,12 +32,12 @@ li {
 }
 
 button {
-  font-size: 1.25em;
+  font-size: 1em;
   font-weight: bold;
   padding: 10px 30px;
   border-radius: 5px;
-  border: 1px solid rgba(0, 0, 0, 0.3);
-  color: white;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  color: rgb(245, 245, 245);
   background-color: rgb(21, 87, 210);
 }
 
@@ -50,11 +51,11 @@ button:hover {
 }
 
 .color-primary {
-  color: rgb(50, 104, 206);
+  color: rgb(21, 87, 210);
 }
 
 header {
-  background-color: rgb(245, 245, 245);
+  background-color: rgb(255, 255, 255);
 }
 
 header .logo {
@@ -62,7 +63,7 @@ header .logo {
   padding: 25px 30px;
   font-weight: bold;
   color: rgb(21, 87, 210);
-  font-size: 1.6em;
+  font-size: 1.4em;
 }
 
 header .container {
@@ -95,46 +96,45 @@ header a:hover {
   justify-content: center;
   text-align: center;
   flex-direction: column;
-  height: 80vh;
+  height: 60vh;
   background-image: linear-gradient(
       0deg,
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
+      rgba(225, 224, 224, 0.5),
+      rgba(224, 219, 219, 0.5)
     ),
-    url("media/hero.jpg");
+    url("assets/placeholder1H.jpeg");
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center center;
+  background-size: 70vh;
+  background-position: right center;
 }
 
 #hero h1 {
-  color: white;
-}
-
-#hero button {
-  font-size: 1.75em;
+  color: rgb(255, 255, 255);
 }
 
 #sobremi .container {
   display: flex;
   margin: 0;
   text-align: center;
-  padding: 200px 12px;
+  padding: 100px 12px;
+  justify-content: flex-start;
 }
 
 #trabajos {
-  background-color: rgb(30, 30, 30);
+  background-color: rgb(207, 228, 249);
   color: white;
   text-align: center;
+
 }
 
 #trabajos .container {
-  padding: 150px 12px;
+  padding: 130px 12px;
+  margin: 20px;
 }
 
 #trabajos h2 {
   margin-top: 0;
-  font-size: 2.2em;
+  font-size: 2em;
 }
 
 #trabajos p {
@@ -143,37 +143,37 @@ header a:hover {
 
 #trabajos .carta {
   background-position: center center;
-  background-size: cover;
-  padding: 50px 0px;
+  background-size: contain;
+  padding: 50px 20px;
   margin: 30px;
-  border-radius: 15px;
+  border-radius: 20px;
 }
 /* cambiar fotos */
 .carta:first-child {
   background-image: linear-gradient(
       0deg,
-      rgba(0, 0, 0, 0.5),
+      rgba(245, 245, 245, 0.5),
       rgba(0, 0, 0, 0.5)
     ),
-    url("media/front-end.jpg");
+    url("assets/placeholder2.jpeg");
 }
 /* cambiar fotos */
 .carta:nth-child(2) {
   background-image: linear-gradient(
       0deg,
-      rgba(0, 0, 0, 0.5),
+      rgba(245, 245, 245, 0.5),
       rgba(0, 0, 0, 0.5)
     ),
-    url("media/full-stack.jpg");
+    url("assets/placeholder2.jpeg");
 }
 /* cambiar fotos */
 .carta:nth-child(3) {
   background-image: linear-gradient(
       0deg,
-      rgba(0, 0, 0, 0.5),
+      rgba(245, 245, 245, 0.5),
       rgba(0, 0, 0, 0.5)
     ),
-    url("media/python.jpg");
+    url("assets/placeholder2.jpeg");
 }
 
 #mais .container {
@@ -192,48 +192,49 @@ header a:hover {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: rgb(30, 30, 30);
+  background-color: rgb(0, 0, 0);
   color: white;
-  height: 80vh;
+  height: 60vh;
 }
 
-#final h2 {
-  font-size: 9vw;
-}
-
-#final button {
+#final h3 {
   font-size: 5vw;
 }
 
-
-
+#final button {
+  font-size: 1vw;
+}
 
 footer {
-  background-color: rgb(230, 230, 230);
+  background-color: rgb(248, 245, 245);
 }
 
 footer p {
   margin: 0;
-  padding: 12px;
-  color: rgb(100, 100, 100);
+  padding: 10px;
+  color: rgb(0, 0, 0);
 }
 
 footer .container {
-  height: 150px;
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: flex-end;
 }
 
 
-@media (min-width: 850px) {
+@media (min-width: 750px) {
   header {
     position: fixed;
     width: 100%;
   }
+  html {
+    scroll-behavior: smooth;
+  }
 
   header .container {
     flex-direction: row;
+    display: flex;
     justify-content: space-between;
   }
 
@@ -244,7 +245,7 @@ footer .container {
   }
 
   #hero h1 {
-    font-size: 5em;
+    font-size: 2em;
   }
 
   #sobremi .container {
@@ -265,13 +266,14 @@ footer .container {
   #sobremi h2 {
     margin-top: 0px;
   }
+  
 /* cambiar fotos */
   #sobremi .img-container {
-    background-image: url("media/sobremi.jpg");
-    background-size: cover;
+    background-image: url("assets/placeholder2.jpeg");
+    background-size: contain;
     background-position: center center;
-    height: 500px;
-    width: 400px;
+    height: 200px;
+    width: 100px;
   }
 
   #mistrabajos .trabajo {
@@ -280,12 +282,12 @@ footer .container {
   }
 
   #mistrabajos p {
-    display: block;
+    display: flex;
     margin-bottom: 30px;
   }
 
   #mistrabajos h2 {
-    font-size: 4em;
+    font-size: 1.5em;
   }
 
   #mistrabajos h3 {
@@ -294,10 +296,10 @@ footer .container {
 
   #mistrabajos .carta {
     padding: 50px;
-    background-size: 100% 150px;
+    background-size: 50% 150px;
     background-repeat: no-repeat;
     background-position-y: 0;
-    background-color: rgba(50, 50, 50, 1);
+    background-color: rgb(190, 189, 189);
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
   }
 /* cambiar fotos */
@@ -307,29 +309,29 @@ footer .container {
         rgba(0, 0, 0, 0.1),
         rgba(0, 0, 0, 0.5)
       ),
-      url("media/front-end-cropped.jpg");
+      url("assets/placeholder2.jpeg");
   }
 /* cambiar fotos */
   .carta:nth-child(2) {
     background-image: linear-gradient(
         0deg,
-        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.1),
         rgba(0, 0, 0, 0.5)
       ),
-      url("media/full-stack-cropped.jpg");
+      url("assets/placeholder2.jpeg");
   }
 /* cambiar fotos */
   .carta:nth-child(3) {
     background-image: linear-gradient(
         0deg,
-        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.1)
         rgba(0, 0, 0, 0.5)
       ),
-      url("media/python-cropped.jpg");
+      url("assets/placeholder2.jpeg");
   }
   /* cambiar fotos */
   #mais {
-    background-image: url("media/background-2.jpeg");
+    background-image: url("assets/placeholder2.jpeg");
     background-repeat: no-repeat;
     background-size: 500px 400px;
     background-position: calc(100vw - 500px) 120px;
@@ -357,6 +359,6 @@ footer {
   color: #000000;
 }
 
-@media (min-width: 1200px) {
-  #mais {
-    background-position-x: calc(100vw - 800px);}
+@media (min-width: 1200px){
+  #mais 
+    background-position-x: calc(100vw - 800px);
