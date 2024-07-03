@@ -148,7 +148,7 @@ header a:hover {
   margin: 30px;
   border-radius: 15px;
 }
-
+/* cambiar fotos */
 .carta:first-child {
   background-image: linear-gradient(
       0deg,
@@ -157,7 +157,7 @@ header a:hover {
     ),
     url("media/front-end.jpg");
 }
-
+/* cambiar fotos */
 .carta:nth-child(2) {
   background-image: linear-gradient(
       0deg,
@@ -166,7 +166,7 @@ header a:hover {
     ),
     url("media/full-stack.jpg");
 }
-
+/* cambiar fotos */
 .carta:nth-child(3) {
   background-image: linear-gradient(
       0deg,
@@ -247,12 +247,12 @@ footer .container {
     font-size: 5em;
   }
 
-  #somos-proya .container {
+  #sobremi .container {
     display: flex;
     justify-content: space-evenly;
   }
 
-  #somos-proya .texto {
+  #sobremi .texto {
     width: 50%;
     max-width: 600px;
     text-align: initial;
@@ -262,37 +262,37 @@ footer .container {
     justify-content: center;
   }
 
-  #somos-proya h2 {
+  #sobremi h2 {
     margin-top: 0px;
   }
-
-  #somos-proya .img-container {
-    background-image: url("media/somos-proya.jpg");
+/* cambiar fotos */
+  #sobremi .img-container {
+    background-image: url("media/sobremi.jpg");
     background-size: cover;
     background-position: center center;
     height: 500px;
     width: 400px;
   }
 
-  #nuestros-programas .programas {
+  #mistrabajos .trabajo {
     display: flex;
     justify-content: center;
   }
 
-  #nuestros-programas p {
+  #mistrabajos p {
     display: block;
     margin-bottom: 30px;
   }
 
-  #nuestros-programas h2 {
+  #mistrabajos h2 {
     font-size: 4em;
   }
 
-  #nuestros-programas h3 {
+  #mistrabajos h3 {
     margin-top: 0;
   }
 
-  #nuestros-programas .carta {
+  #mistrabajos .carta {
     padding: 50px;
     background-size: 100% 150px;
     background-repeat: no-repeat;
@@ -300,16 +300,16 @@ footer .container {
     background-color: rgba(50, 50, 50, 1);
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
   }
-
+/* cambiar fotos */
   .carta:first-child {
     background-image: linear-gradient(
         0deg,
-        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.1),
         rgba(0, 0, 0, 0.5)
       ),
       url("media/front-end-cropped.jpg");
   }
-
+/* cambiar fotos */
   .carta:nth-child(2) {
     background-image: linear-gradient(
         0deg,
@@ -318,7 +318,7 @@ footer .container {
       ),
       url("media/full-stack-cropped.jpg");
   }
-
+/* cambiar fotos */
   .carta:nth-child(3) {
     background-image: linear-gradient(
         0deg,
@@ -327,50 +327,22 @@ footer .container {
       ),
       url("media/python-cropped.jpg");
   }
-
-  #caracteristicas {
+  /* cambiar fotos */
+  #mais {
     background-image: url("media/background-2.jpeg");
     background-repeat: no-repeat;
     background-size: 500px 400px;
     background-position: calc(100vw - 500px) 120px;
   }
 
-  #caracteristicas .container {
+  /* resolver esse problema */
+  #mais .container {
     text-align: initial;
   }
 
-  #caracteristicas ul {
+  #mais ul {
     margin-left: 100px;
   }
-
-
-form {
-  max-width: 500px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
-}
-x form label {
-  margin: 10px 0 5px;
-}
-form input,
-form textarea {
-  padding: 20px;
-  margin-bottom: 20px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  width: 100%;
-}
-form button {
-  padding: 20px 20px;
-  margin-bottom: 20px;
-  border: none;
-  border-radius: 5px;
-  background-color: #333;
-  color: aliceblue;
-  cursor: pointer;
-}
 
 footer .container {
   justify-content: flex-end;
@@ -386,5 +358,5 @@ footer {
 }
 
 @media (min-width: 1200px) {
-  #caracteristicas {
-    background-position-x: calc(100vw - 800px);
+  #mais {
+    background-position-x: calc(100vw - 800px);}
