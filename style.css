@@ -50,8 +50,9 @@ button:hover {
 }
 
 .container {
-  max-width: 1400px;
+  max-width: 1300px;
   margin: auto;
+  border-radius: 20px;
 }
 
 .color-primary {
@@ -153,7 +154,7 @@ header a:hover {
   background-image: linear-gradient(
       0deg,
       rgba(245, 245, 245, 0.5),
-      rgba(0, 0, 0, 0.5)
+      rgba(161, 202, 232, 0.5)
     ),
     url("assets/placeholder2.jpeg");
 }
@@ -162,7 +163,7 @@ header a:hover {
   background-image: linear-gradient(
       0deg,
       rgba(245, 245, 245, 0.5),
-      rgba(0, 0, 0, 0.5)
+      rgba(161, 202, 232, 0.5)
     ),
     url("assets/placeholder2.jpeg");
 }
@@ -171,7 +172,7 @@ header a:hover {
   background-image: linear-gradient(
       0deg,
       rgba(245, 245, 245, 0.5),
-      rgba(0, 0, 0, 0.5)
+      rgba(161, 202, 232, 0.5)
     ),
     url("assets/placeholder2.jpeg");
 }
@@ -311,7 +312,7 @@ footer .container {
     background-image: linear-gradient(
         0deg,
         rgba(0, 0, 0, 0.1),
-        rgba(0, 0, 0, 0.5)
+        rgba(161, 202, 232, 0.5)
       ),
       url("assets/placeholder2.jpeg");
   }
@@ -320,7 +321,7 @@ footer .container {
     background-image: linear-gradient(
         0deg,
         rgba(0, 0, 0, 0.1),
-        rgba(0, 0, 0, 0.5)
+        rgba(161, 202, 232, 0.5)
       ),
       url("assets/placeholder2.jpeg");
   }
@@ -329,7 +330,7 @@ footer .container {
     background-image: linear-gradient(
         0deg,
         rgba(0, 0, 0, 0.1)
-        rgba(0, 0, 0, 0.5)
+        rgba(161, 202, 232, 0.5)
       ),
       url("assets/placeholder2.jpeg");
   }
