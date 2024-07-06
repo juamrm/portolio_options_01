@@ -51,9 +51,9 @@ button:hover {
 
 
 .container {
-  max-width: 1200px;
+  max-width: 1300px;
   margin: auto;
-  border-radius: 0px;
+  border-radius: 10px;
 }
 
 .color-primary {
@@ -80,9 +80,10 @@ header .container {
 
 header nav {
   display: flex;
+  width: auto;
   flex-direction: column;
   text-align: center;
-  padding-bottom: 25px;
+  padding-bottom: 20px;
 }
 
 header a {
@@ -98,11 +99,12 @@ header a:hover {
 
 #hero {
   display: flex;
+  margin-top: auto;
   align-items: center;
   justify-content: center;
   text-align: center;
   flex-direction: column;
-  height: 50vh;
+  height: 70vh;
   background-image:
     url("assets/bg02.png");
   background-repeat: no-repeat;
@@ -117,9 +119,9 @@ header a:hover {
 
 #sobremi .container {
   display: flex;
-  margin: 0;
+  margin: 10px;
   text-align: left;
-  padding: 100px 12px;
+  padding: 100px 15px;
   justify-content: flex-start;
 }
 
@@ -138,7 +140,7 @@ header a:hover {
 #mistrabajos h1 {
   margin-top: auto;
   font-size: 1.7em;
-  color: #333;
+  color: #000000;
 }
 
 #mistrabajos h2 {
@@ -158,27 +160,24 @@ header a:hover {
   border-radius: 20px;
 }
 
-/* cambiar fotos */
 .carta:first-child {
   background-image: url("assets/bg01.png");
 }
 
-/* cambiar fotos */
 .carta:nth-child(2) {
   background-image: url("assets/bg03.png");
 }
-/* cambiar fotos */
 .carta:nth-child(3) {
   background-image: url("assets/bg04.png");
 }
 
 #mais .container {
-  text-align: center;
-  padding: 150px 20px;
+  text-align: left;
+  padding: 80px 80px;
 }
 
 #mais li {
-  margin: 40px 20px;
+  margin: 20px 20px;
   font-weight: bold;
 }
 
@@ -189,7 +188,7 @@ header a:hover {
   align-items: center;
   text-align: center;
   background-color: rgb(0, 0, 0);
-  color: white;
+  color: #ccc;
   height: 40vh;
   border-radius: 15px;
 }
@@ -206,12 +205,12 @@ text-align: center;
 }
 form {
   max-width: 500px;
-  margin: 0 auto;
+  margin: 0 0;
   display: flex;
   flex-direction: column;
 }
 x form label {
-  margin: 5px 0 5px;
+  margin: 10px 0 10px;
 }
 
 form textarea {
@@ -230,17 +229,17 @@ form button {
   cursor: pointer;
 }
 form button:hover {
-  background-color: #7a7878;
+  background-color: #6632df;
 }
 
 footer {
-  background-color: rgb(248, 245, 245);
+  background-color: rgba(154, 218, 255, 0.392);
   border-radius: 15px;
 }
 
 footer p {
   margin: 0;
-  padding: 10px;
+  padding: 20px;
   color: rgb(0, 0, 0);
 }
 
@@ -268,7 +267,7 @@ footer .container {
 /* Version Desktop con media query */
 
 
-@media (min-width: 750px) {
+@media (min-width: 700px) {
   header {
     position: fixed;
     width: 100%;
@@ -318,7 +317,7 @@ footer .container {
     background-image: url("assets/bg01.png");
     background-size: contain;
     background-position: center center;
-    height: 200px;
+    height: 100px;
     width: 100px;
   }
 
@@ -346,7 +345,7 @@ footer .container {
     background-size: 100% 500px;
     background-repeat: no-repeat;
     background-position-y: 0;
-    background-color: rgba(251, 245, 245, 0.045);
+    background-color: rgba(223, 214, 214, 0.045);
     box-shadow: 1px 1px 10px rgba(161, 202, 232, 0.5);
     border-radius: 15px;
   }
@@ -364,28 +363,30 @@ footer .container {
     background-image: url("assets/bg01.png");
     background-repeat: no-repeat;
     background-size: 300px 300px;
-    background-position: calc(200vw - 500px) 120px;
+    background-position: calc(300vw - 500px) 150px;
+  
   }
 
   /* resolver esse problema */
   #mais .container {
     text-align: initial;
+    
   }
 
   #mais ul {
-    margin-left: 100px;
+    margin-left: 120px;
   }
 
-  form {
+ form {
   max-width: 500px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
 }
 x form label {
-  margin: 0px 0 5px;
+  margin: 5px 0 5px;
 }
-form input,   
+
 form textarea {
   padding: 10px;
   margin-bottom: 20px;
@@ -394,7 +395,7 @@ form textarea {
   width: 100%;
 }
 form button {
-  padding: 10px 20px;
+  padding: 20px 20px;
   border: none;
   border-radius: 10px;
   background-color: #333;
@@ -405,6 +406,9 @@ form button:hover {
   background-color: #7a7878;
 }
 
-  @media (min-width: 1200px)
-  #hero
-  {background-position-x: calc(100vw - 800px);}
+  @media (min-width: 1200px) {
+    header{
+  background-position-x: calc(100vw - 800px);
+    }
+
+
