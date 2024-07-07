@@ -122,13 +122,13 @@ header a:hover {
 
 #mistrabajos {
   background-color: rgba(236, 236, 236, 0);
-  color: white;
+  color: rgb(0, 0, 0);
   text-align: center;
 }
 
 #mistrabajos .container {
-  padding: 130px 12px;
-  margin: 40px;
+  padding: 30px 12px;
+  margin: 30px;
 }
 
 #mistrabajos h1 {
@@ -154,43 +154,15 @@ header a:hover {
 }
 
 .carta:first-child {
-  background-image: linear-gradient(
-      0deg,
-      rgba(245, 245, 245, 0.062),
-      rgba(161, 202, 232, 0.5)
-    ),
-    url("assets/bg05.png");
+  background-image: url("assets/bg05.png");
 }
 
 .carta:nth-child(2) {
-  background-image: linear-gradient(
-      0deg,
-      rgba(245, 245, 245, 0.062),
-      rgba(161, 202, 232, 0.5)
-    ),
-    url("assets/bg07.png");
+  background-image: url("assets/bg07.png");
 }
 
 .carta:nth-child(3) {
-  background-image: linear-gradient(
-      0deg,
-      rgba(245, 245, 245, 0.062),
-      rgba(161, 202, 232, 0.5)
-    ),
-    url("assets/bg08.png");
-}
-
-#mais {
-  background-color: rgb(248, 248, 245);
-}
-#mais .container {
-  text-align: center;
-  padding: 200px 20px;
-}
-
-#mais li {
-  margin: 40px 20px;
-  font-weight: bold;
+  background-image: url("assets/bg08.png");
 }
 
 #final {
@@ -261,18 +233,10 @@ footer .container {
   align-items: center;
 }
 
-#mais {
-  display: flex;
-  flex-direction: column;
-  padding: 8px;
-  gap: 10px;
-}
-
 @media (min-width: 850px) {
   header {
     position: fixed;
     width: 100%;
-    border-radius: 5px;
   }
 
   /* Version Desktop con media query */
@@ -305,7 +269,7 @@ footer .container {
 
   #sobremi .texto {
     width: 50%;
-    max-width: 300px;
+    max-width: 350px;
     text-align: initial;
     padding-left: 30px;
     display: flex;
@@ -317,13 +281,12 @@ footer .container {
     margin-top: 0px;
   }
 
-  /* cambiar fotos */
   #sobremi .img-container {
-    background-image: url("assets/Skills\ Section.png");
-    background-size: 100%;
+    background-image: url("assets/icons.png");
+    background-size: 125%;
     background-position: center center;
-    height: 200px;
-    width: 100px;
+    height: 150px;
+    width: 300px;
   }
 
   #mistrabajos .trabajo {
@@ -383,23 +346,6 @@ footer .container {
         rgba(161, 202, 232, 0.5)
       ),
       url("assets/bg08.png");
-  }
-
-  #mais {
-    background-image: url("https://images.unsplash.com/photo-1703872346265-bd0bdf809bbe?q=80&w=1689&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA==");
-    background-repeat: no-repeat;
-    background-size: 500px 400px;
-    background-position: calc(200vw - 500px) 120px;
-  }
-
-  /* resolver esse problema */
-
-  #mais .container {
-    text-align: initial;
-  }
-
-  #mais ul {
-    margin-left: 100px;
   }
 
   form {
